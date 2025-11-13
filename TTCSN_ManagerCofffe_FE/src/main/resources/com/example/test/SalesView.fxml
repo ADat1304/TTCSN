@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml"
+      spacing="16" styleClass="viewRoot">
+    <padding><Insets top="16" right="16" bottom="16" left="16"/></padding>
+    <Label text="Trang chủ" styleClass="viewHeading"/>
+    <Label wrapText="true" text="Khu vực hiển thị dashboard, thẻ số liệu, biểu đồ..."/>
+    <HBox spacing="12">
+        <TitledPane text="Doanh thu hôm nay" expanded="true"><content><Label text="1.200.000đ"/></content></TitledPane>
+        <TitledPane text="Đơn hàng" expanded="true"><content><Label text="35"/></content></TitledPane>
+    </HBox>
+</VBox>

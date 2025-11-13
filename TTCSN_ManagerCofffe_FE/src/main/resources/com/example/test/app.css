@@ -1,0 +1,70 @@
+.root {
+    -fx-font-family: "Inter", "Segoe UI", Arial;
+    -fx-background-color: #f5f7fb;
+}
+
+/* Header */
+.header {
+    -fx-background-color: white;
+    -fx-border-color: #eceff4;
+    -fx-border-width: 0 0 1 0;
+}
+.pageTitle {
+    -fx-font-size: 20px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #1e2a5e;
+}
+
+/* Sidebar */
+.sidebar {
+    -fx-pref-width: 220;
+    -fx-background-color: #ffffff;
+    -fx-border-color: #eceff4;
+    -fx-border-width: 0 1 0 0;
+}
+.logoRow { -fx-padding: 8 8 12 8; }
+.logoIcon { -fx-font-size: 22px; }
+.logoText { -fx-font-size: 16px; -fx-font-weight: 700; }
+
+.menuBtn {
+    -fx-background-radius: 10;
+    -fx-padding: 10 14 10 14;
+    -fx-alignment: CENTER_LEFT;
+    -fx-text-fill: #3a4152;
+    -fx-background-color: transparent;
+    -fx-font-size: 13px;
+}
+.menuBtn:hover { -fx-background-color: #f0f5ff; }
+.menuBtn:selected {
+    -fx-background-color: #1fc26b; /* xanh lá nhạt theo ảnh */
+    -fx-text-fill: white;
+}
+
+.logoutBtn {
+    -fx-background-radius: 10;
+    -fx-padding: 10 14;
+    -fx-background-color: #f7f7f7;
+    -fx-text-fill: #c0392b;
+}
+.logoutBtn:hover { -fx-background-color: #ffecec; }
+
+/* Content */
+.contentHolder {
+    -fx-background-color: #f5f7fb;
+}
+.viewRoot {
+    -fx-background-color: #fff;
+    -fx-padding: 16;
+    -fx-background-radius: 14;
+    -fx-effect: dropshadow(three-pass-box, rgba(10,10,10,0.06), 10, 0, 0, 2);
+    -fx-border-radius: 14;
+}
+.viewHeading {
+    -fx-font-size: 16px;
+    -fx-font-weight: 700;
+}
+
+/* User area */
+.userName { -fx-font-weight: 700; }
+.userRole { -fx-text-fill: #7b8aa1; -fx-font-size: 11px; }
+.statusDot { -fx-fill: #1fc26b; }

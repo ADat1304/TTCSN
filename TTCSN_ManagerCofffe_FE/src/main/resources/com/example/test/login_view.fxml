@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.43481182795698925" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="739.0" prefWidth="1267.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.test.Controller.Login_Controller">
+    <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="898.0" prefWidth="642.0">
+            <children>
+                <ImageView fitHeight="775.0" fitWidth="578.0" layoutX="-5.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../images/Login_background.png" />
+                    </image>
+                </ImageView>
+            </children></AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="337.0" prefWidth="181.0">
+            <children>
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="111.0" layoutY="153.0" prefHeight="49.0" prefWidth="566.0" text="CHUC BẠN CÓ MỘT NGÀY LÀM VIỆC TỐT LÀNH">
+                    <font>
+                        <Font name="Arial Bold" size="23.0" />
+                    </font>
+                </Label>
+                <Label contentDisplay="CENTER" layoutX="278.0" layoutY="219.0" prefHeight="37.0" prefWidth="233.0" text="Nhập thông tin để đăng nhập">
+                    <font>
+                        <Font name="Arial" size="18.0" />
+                    </font>
+                </Label>
+                <TextField  fx:id="name_userTF" layoutX="290.0" layoutY="313.0" prefHeight="37.0" prefWidth="208.0" promptText="Nhập tên đăng nhập" />
+                <PasswordField fx:id="password" layoutX="291.0" layoutY="384.0" prefHeight="37.0" prefWidth="208.0" promptText="Nhập mật khẩu" />
+                <Button accessibleRole="PASSWORD_FIELD" layoutX="511.0" layoutY="388.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="55.0" text="Xem" />
+                <Button id="loginBT" layoutX="299.0" layoutY="459.0" mnemonicParsing="false" onAction="#submit" prefHeight="37.0" prefWidth="193.0" style="-fx-background-color: green;" text="Đăng nhập" textFill="#fffefe">
+                    <font>
+                        <Font name="System Bold" size="19.0" />
+                    </font>
+                </Button>
+                <Button id="forgetBT" alignment="CENTER" layoutX="334.0" layoutY="516.0" mnemonicParsing="false" style="-fx-background-color: null;" text="Quên mật khẩu?">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+            </children></AnchorPane>
+    </items>
+</SplitPane>
